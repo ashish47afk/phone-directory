@@ -11,6 +11,7 @@ class App extends Component{
 		 	<div className="grid-container heading-container">
 		 	<span className="grid-item name-heading">Name</span>
 		 	<span className="grid-item phone-heading">Phone</span>
+		 	<button className="custom-btn delete-btn">Delete</button>
 		 	</div>
 		 	</div>
 		 	</div>
