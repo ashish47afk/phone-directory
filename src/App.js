@@ -1,20 +1,14 @@
 import React,{Component} from 'react';
 import Header from './Header.js';
 class App extends Component{
-	render()
-	{
-		let subscribers=[
-  {
-    id:1,
-    name:"Ashish",
-    phone:9876543210
-  },
-  {
-    id:2,
-    name:"Thakur",
-    phone:9876543210
+	constructor() {
+	super();
+	this.state = {
+    subscribersListToShow: []
   }
-];
+
+  }
+  render() {
 		 return (
 		 	<div>
 		 	{/* <Header /> */}
@@ -27,7 +21,7 @@ class App extends Component{
 		 	
 		 	</div>
 		 	{
-         subscribers.map(function(sub)
+         this.state.subscribersListToShow.map(sub => {
          {
            return <div key={sub.id} className="grid-container">
              <span className="grid-item">{sub.name}</span>
@@ -37,7 +31,7 @@ class App extends Component{
 
              </span>
              </div>
-         })
+         }})
        }
 		 	</div>
 		 	</div>
