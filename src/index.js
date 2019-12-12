@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import PhoneDirectory from './PhoneDirectory';
 import * as serviceWorker from './serviceWorker';
-import AddSusbscriber from './AddSubscriber';
 import './common.css';
 
 ReactDOM.render(<PhoneDirectory/>, document.getElementById('root'));
